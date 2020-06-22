@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ContactApplication {
@@ -36,11 +39,34 @@ public class ContactApplication {
                  keepLooking = true;
                  break;
              case 2:
-
+                 System.out.println("Enter contact first name: ");
+                 String userInputFirstName = input.getString();
+                 System.out.println("Enter contact last name: ");
+                 String userInputLastName = input.getString();
+                 System.out.println("Enter contact phone number: ");
+                 String userInputDigits = input.getString();
+                 Files.write(contacts, Arrays.asList(userInputFirstName + " " + userInputLastName + " " + userInputDigits), StandardOpenOption.APPEND);
                  keepLooking = true;
                  break;
              case 3:
+                 System.out.println("Enter contact first name: ");
+                 String userSearchContactName = input.getString();
+//                 Path groceriesPath = Paths.get("data", "groceries.txt");
+                 List<String> searchList = Files.readAllLines(contacts);
 
+                 //this one does not display anything
+//                 for (String contact : contactList) {
+//                 if (userSearchContactName.equals(contact)){
+//                     System.out.println(contact);
+//                 }
+
+                 //this one displays array index
+//                 for (int i = 0; i < searchList.size(); i += 1) {
+//                     if (userSearchContactName.equals(i)) {
+//                     System.out.println(i);
+//                     }
+//                     System.out.println((i + 1) + ": " + searchList.get(i));
+                 }
                  keepLooking = true;
                  break;
              case 4:

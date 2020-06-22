@@ -1,6 +1,6 @@
-Carole Baskins 1234567890
-Toph Beifong 1234567890
-Katara OfTheSouthernTribe 1234567890
-Hama Bloodbender 2108675309
-Beyonce Carter 28133089
-Number Letter 12382730
+Carole, Baskins, 1234567890
+Toph, Beifong, 1234567890
+Katara, OfTheSouthernTribe, 1234567890
+Hama, Bloodbender, 2108675309
+Beyonce, Carter, 28133089
+Number, Letter, 12382730

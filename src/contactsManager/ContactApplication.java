@@ -55,10 +55,12 @@ public class ContactApplication {
                  List<String> searchList = Files.readAllLines(contacts);
 
                  //this one does not display anything
-//                 for (String contact : contactList) {
-//                 if (userSearchContactName.equals(contact)){
-//                     System.out.println(contact);
-//                 }
+                 // need to search for the name within the commas
+                 for (String contact : contactList) {
+                     if (userSearchContactName.equals(contact)) {
+                         System.out.println(contact);
+                     }
+                 }
 
                  //this one displays array index
 //                 for (int i = 0; i < searchList.size(); i += 1) {

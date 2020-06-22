@@ -66,7 +66,7 @@ public class ContactApplication {
 //                     System.out.println(i);
 //                     }
 //                     System.out.println((i + 1) + ": " + searchList.get(i));
-                 }
+
                  keepLooking = true;
                  break;
              case 4:

@@ -1,4 +1,7 @@
 Toph, Beifong, 1234567890
 Joe, Exotic, 4567891235
-Carole, Baskins, 7879512364
+Carole, Baskin, 7879512364
 Shelby, Polasek, 7894556213
+Howard, Baskin, discontinued
+Knoah, Cotto, 7894562584
+Mark, Alonge, 7895862458

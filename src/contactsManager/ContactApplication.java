@@ -67,12 +67,76 @@ public class ContactApplication {
                     for (String contact : contactList) {
                         searchArray = contact.split(",");
 
-                        for (int i = 0; i < searchArray.length - 1; i++)
+                        for (int i = 0; i < searchArray.length - 1; i++) {
                             if (searchArray[i].contains(userSearchContactName)) {
                                 System.out.println("-------");
-                                System.out.println(searchArray[0] + searchArray[1] + searchArray[2]);
+                                System.out.println(searchArray[0] + searchArray[1] + ": " + searchArray[2]);
                                 System.out.println("-------");
                             }
+                        }
+                    }
+                    if (userSearchContactName.equalsIgnoreCase("Joe")){
+                        System.out.println("                       __,,,,_\n" +
+                                "          _ __..-;''`--/'/ /.',-`-.\n" +
+                                "      (`/' ` |  \\ \\ \\\\ / / / / .-'/`,_\n" +
+                                "     /'`\\ \\   |  \\ | \\| // // / -.,/_,'-,\n" +
+                                "    /<7' ;  \\ \\  | ; ||/ /| | \\/    |`-/,/-.,_,/')\n" +
+                                "   /  _.-, `,-\\,__|  _-| / \\ \\/|_/  |    '-/.;.\\'\n" +
+                                "   `-`  f/ ;      / __/ \\__ `/ |__/ |\n" +
+                                "        `-'      |  -| =|\\_  \\  |-' |\n" +
+                                "              __/   /_..-' `  ),'  //\n" +
+                                "             ((__.-'((___..-'' \\__.'\n");
+                    }else if (userSearchContactName.equalsIgnoreCase("Knoah")){
+                        System.out.println("¸.•*¨*•♫♪♪♫•*¨*•.¸¸❤Ƹ̵̡Ӝ̵̨̄Ʒ");
+                        System.out.println("║░█░█░║░█░█░█░║░█░█░║\n" +
+                                "║░█░█░║░█░█░█░║░█░█░║\n" +
+                                "║░║░║░║░║░║░║░║░║░║░║\n" +
+                                "╚═╩═╩═╩═╩═╩═╩═╩═╩═╩═╝");
+                        System.out.println("Ƹ̵̡Ӝ̵̨̄Ʒ❤¸¸.•*¨*•♫♪♪♫•*¨*•.¸¸\n");
+                    }else if(userSearchContactName.equalsIgnoreCase("Mark")){
+                        System.out.println("Ⓘ️ⓜ  Ⓑⓐⓣⓜⓐⓝ");
+                        System.out.println("       _,    _   _    ,_\n" +
+                                "  .o888P     Y8o8Y     Y888o.\n" +
+                                " d88888      88888      88888b\n" +
+                                "d888888b_  _d88888b_  _d888888b\n" +
+                                "8888888888888888888888888888888\n" +
+                                "8888888888888888888888888888888\n" +
+                                "YJGS8P\"Y888P\"Y888P\"Y888P\"Y8888P\n" +
+                                " Y888   '8'   Y8P   '8'   888Y\n" +
+                                "  '8o          V          o8'");
+                    }else if(userSearchContactName.equalsIgnoreCase("shelby")){
+                        System.out.println("            __\n" +
+                                "(\\,--------'()'--o\n" +
+                                " (_    ___    /~\"\n" +
+                                "  (_)_)  (_)_)");
+                    }else if(userSearchContactName.equalsIgnoreCase("Howard")){
+                        System.out.println("                                       ,w.\n" +
+                                "                                             ,YWMMw  ,M  ,\n" +
+                                "                        _.---.._   __..---._.'MMMMMw,wMWmW,\n" +
+                                "                   _.-\"\"        \"\"\"           YP\"WMMMMMMMMMb,\n" +
+                                "                .-' __.'                   .'     MMMMW^WMMMM;\n" +
+                                "    _,        .'.-'\"; `,       /`     .--\"\"      :MMM[==MWMW^;\n" +
+                                " ,mM^\"     ,-'.'   /   ;      ;      /   ,       MMMMb_wMW\"  @\\\n" +
+                                ",MM:.    .'.-'   .'     ;     `\\    ;     `,     MMMMMMMW `\"=./`-,\n" +
+                                "WMMm__,-'.'     /      _.\\      F\"\"\"-+,,   ;_,_.dMMMMMMMM[,_ / `=_}\n" +
+                                "\"^MP__.-'    ,-' _.--\"\"   `-,   ;       \\  ; ;MMMMMMMMMMW^``; __|\n" +
+                                "           /   .'            ; ;         )  )`{  \\ `\"^W^`,   \\  :\n" +
+                                "          /  .'             /  (       .'  /     Ww._     `.  `\"\n" +
+                                "         /  Y,              `,  `-,=,_{   ;      MMMP`\"\"-,  `-._.-,\n" +
+                                "        (--, )                `,_ / `) \\/\"\")      ^\"      `-, -;\"\\:\n" +
+                                "         `\"\"\"                    `\"\"\"   `\"'                  `---\"");
+                        System.out.println(" _       _\n" +
+                                "(_'-----'_)\n" +
+                                "(_.'\"\"\"\"._)");
+                        System.out.println("                                                                _____|~~\\_____      _____________\n" +
+                                "                                                           _-~               \\    |    \\\n" +
+                                "                                                           _-    | X      |    |__/   \\   \\\n" +
+                                "                                                           _-         )   |   |  |     \\  \\\n" +
+                                "                                                           _-    | X      |    |--|      |  |\n" +
+                                "                                                           __-_______________ /__/_______|  |_________\n");
+
+                    }else if(userSearchContactName.equalsIgnoreCase("Carole")){
+
                     }
 
                     keepLooking = true;

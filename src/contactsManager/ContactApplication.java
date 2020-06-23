@@ -51,27 +51,37 @@ public class ContactApplication {
              case 3:
                  System.out.println("Enter contact first name: ");
                  String userSearchContactName = input.getString();
-//                 Path groceriesPath = Paths.get("data", "groceries.txt");
-                 List<String> searchList = Files.readAllLines(contacts);
-
-                 //this one does not display anything
-                 // need to search for the name within the commas
+                 String[] searchArray;
                  for (String contact : contactList) {
-                     if (userSearchContactName.equals(contact)) {
-                         System.out.println(contact);
+                     searchArray = contact.split(",");
+
+                     for(int i = 0; i < searchArray.length - 1; i++ )
+                     if (searchArray[i].contains(userSearchContactName)) {
+                         System.out.println(searchArray[0] + searchArray[1] + searchArray[2]);
                      }
                  }
-
-                 //this one displays array index
-//                 for (int i = 0; i < searchList.size(); i += 1) {
-//                     if (userSearchContactName.equals(i)) {
-//                     System.out.println(i);
-//                     }
-//                     System.out.println((i + 1) + ": " + searchList.get(i));
 
                  keepLooking = true;
                  break;
              case 4:
+                 System.out.println("Enter contact First name: ");
+                 String userDeleteContactName = input.getString();
+                 String[] deleteArray;
+                 String contactToBeDeleted = "";
+                 for (String contact : contactList) {
+                     deleteArray = contact.split(",");
+
+                     List<String> deleteContact = Arrays.asList(deleteArray);
+//                     System.out.println(deleteContact);
+//                        for(int i = 0; i < deleteContact.size(); i++ )
+
+                         if (deleteContact.contains(userDeleteContactName)) {
+                             contactToBeDeleted = contact;
+                         }
+                 }
+                 contactList.remove(contactToBeDeleted);
+                 Files.write(contacts, contactList);
+//                 List<String> contactList = Files.write(contacts);
 
                  keepLooking = true;
                  break;

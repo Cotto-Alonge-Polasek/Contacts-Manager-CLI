@@ -35,15 +35,17 @@ public class ContactApplication {
             switch (userChoice) {
                 case 1:
                     //VIEW CONTACTS
-                    System.out.println("=============== ALL CONTACTS ==================");
+                    System.out.println("============ ALL CONTACTS =============|");
+                    System.out.println("Name                   | Phone Number  |");
+                    System.out.println("---------------------------------------|");
 
                     String[] allContactsArray;
                     for (String contact : contactList) {
 
                         allContactsArray = contact.split(",");
-                        System.out.println(allContactsArray[0] + allContactsArray[1] + " :" + allContactsArray[2]);
-
+                        System.out.printf("%-10s%-13s|%5s%5s\n" , allContactsArray[0],allContactsArray[1], allContactsArray[2],"|");
                     }
+
                     keepLooking = true;
                     break;
                 case 2:

@@ -21,7 +21,7 @@ public class ContactApplication {
             Path contacts = Paths.get("src/contactsManager", "contacts.txt");
             List<String> contactList = Files.readAllLines(contacts);
 
-            System.out.println("\n------------------ MENU -----------------------");
+            System.out.println("\n------------------ MENU ---------------------");
             System.out.println("1. View contacts." +
                     "\n2. Add a new contact." +
                     "\n3. Search a contact by name." +
@@ -35,15 +35,16 @@ public class ContactApplication {
             switch (userChoice) {
                 case 1:
                     //VIEW CONTACTS
-                    System.out.println("============ ALL CONTACTS =============|");
-                    System.out.println("Name                   | Phone Number  |");
-                    System.out.println("---------------------------------------|");
+                    System.out.println("============ ALL CONTACTS ===============|");
+                    System.out.println("Name                   | Phone Number    |");
+                    System.out.println("-----------------------------------------|");
 
                     String[] allContactsArray;
                     for (String contact : contactList) {
 
                         allContactsArray = contact.split(",");
-                        System.out.printf("%-10s%-13s|%5s%5s\n" , allContactsArray[0],allContactsArray[1], allContactsArray[2],"|");
+
+                        System.out.printf("%-10s%-13s|%5s%7s\n" , allContactsArray[0],allContactsArray[1], allContactsArray[2],"|");
                     }
 
                     keepLooking = true;
@@ -61,7 +62,7 @@ public class ContactApplication {
                     break;
                 case 3:
                     //SEARCH BY NAME
-                    System.out.println("Enter contact first name: ");
+                    System.out.println("Enter contact's name: ");
                     String userSearchContactName = input.getString();
                     String[] searchArray;
                     for (String contact : contactList) {
@@ -87,12 +88,27 @@ public class ContactApplication {
                                 "              __/   /_..-' `  ),'  //\n" +
                                 "             ((__.-'((___..-'' \\__.'\n");
                     }else if (userSearchContactName.equalsIgnoreCase("Knoah")){
-                        System.out.println("¸.•*¨*•♫♪♪♫•*¨*•.¸¸❤Ƹ̵̡Ӝ̵̨̄Ʒ");
-                        System.out.println("║░█░█░║░█░█░█░║░█░█░║\n" +
-                                "║░█░█░║░█░█░█░║░█░█░║\n" +
-                                "║░║░║░║░║░║░║░║░║░║░║\n" +
-                                "╚═╩═╩═╩═╩═╩═╩═╩═╩═╩═╝");
-                        System.out.println("Ƹ̵̡Ӝ̵̨̄Ʒ❤¸¸.•*¨*•♫♪♪♫•*¨*•.¸¸\n");
+                        System.out.println("     z$$$$$. $$\n" +
+                                "    $$$$$$$$$$$\n" +
+                                "   $$$$$$**$$$$             eeeeer\n" +
+                                "  $$$$$%   '$$$             $$$$$F\n" +
+                                " 4$$$$P     *$$             *$$$$F\n" +
+                                " $$$$$      '$$    .ee.      ^$$$F            ..e.\n" +
+                                " $$$$$       \"\"  .$$$$$$b     $$$F 4$$$$$$   $$$$$$c\n" +
+                                "4$$$$F          4$$$\"\"$$$$    $$$F '*$$$$*  $$$P\"$$$L\n" +
+                                "4$$$$F         .$$$F  ^$$$b   $$$F  J$$$   $$$$  ^$$$.\n" +
+                                "4$$$$F         d$$$    $$$$   $$$F J$$P   .$$$F   $$$$\n" +
+                                "4$$$$F         $$$$    3$$$F  $$$FJ$$P    4$$$\"   $$$$\n" +
+                                "4$$$$F        4$$$$    4$$$$  $$$$$$$r    $$$$$$$$$$$$\n" +
+                                "4$$$$$        4$$$$    4$$$$  $$$$$$$$    $$$$********\n" +
+                                " $$$$$        4$$$$    4$$$F  $$$F4$$$b   *$$$r\n" +
+                                " 3$$$$F       d$$$$    $$$$\"  $$$F *$$$F  4$$$L     .\n" +
+                                "  $$$$$.     d$$$$$.   $$$$   $$$F  $$$$.  $$$$    z$P\n" +
+                                "   $$$$$e..d$$$\"$$$b  4$$$\"  J$$$L  '$$$$  '$$$b..d$$\n" +
+                                "    *$$$$$$$$$  ^$$$be$$$\"  $$$$$$$  3$$$$F \"$$$$$$$\"\n" +
+                                "     ^*$$$$P\"     *$$$$*    $$$$$$$   $$$$F  ^*$$$\"      zero");
+
+
                     }else if(userSearchContactName.equalsIgnoreCase("Mark")){
                         System.out.println("Ⓘ️ⓜ  Ⓑⓐⓣⓜⓐⓝ");
                         System.out.println("       _,    _   _    ,_\n" +
@@ -105,12 +121,17 @@ public class ContactApplication {
                                 " Y888   '8'   Y8P   '8'   888Y\n" +
                                 "  '8o          V          o8'");
                     }else if(userSearchContactName.equalsIgnoreCase("shelby")){
-                        System.out.println("            __\n" +
-                                "(\\,--------'()'--o\n" +
-                                " (_    ___    /~\"\n" +
-                                "  (_)_)  (_)_)");
+                        System.out.println("        ______\n" +
+                                "       /     /\\\n" +
+                                "      /     /  \\\n" +
+                                "     /_____/----\\_    (  \n" +
+                                "    \"     \"          ).  \n" +
+                                "   _ ___          o (:') o   \n" +
+                                "  (@))_))        o ~/~~\\~ o   \n" +
+                                "                  o  o  o");
                     }else if(userSearchContactName.equalsIgnoreCase("Howard")){
-                        System.out.println("                                       ,w.\n" +
+                        System.out.println("Sorry this number is no longer available. Cat got his tongue, and his arms, and his legs...");
+                        System.out.println("                                          \n" +
                                 "                                             ,YWMMw  ,M  ,\n" +
                                 "                        _.---.._   __..---._.'MMMMMw,wMWmW,\n" +
                                 "                   _.-\"\"        \"\"\"           YP\"WMMMMMMMMMb,\n" +
@@ -136,14 +157,29 @@ public class ContactApplication {
                                 "                                                           __-_______________ /__/_______|  |_________\n");
 
                     }else if(userSearchContactName.equalsIgnoreCase("Carole")){
-
+                        System.out.println("___________________________________\n" +
+                                "|#######====================#######|\n" +
+                                "|#(1)*UNITED STATES OF AMERICA*(1)#|\n" +
+                                "|#**          /===\\   ********  **#|\n" +
+                                "|*# {G}      | (\") |             #*|\n" +
+                                "|#*  ******  | /v\\ |    O N E    *#|\n" +
+                                "|#(1)         \\===/            (1)#|\n" +
+                                "|##=========ONE DOLLAR===========##|\n" +
+                                "------------------------------------");
+                    }else if(userSearchContactName.equalsIgnoreCase("Sophie")){
+                        System.out.println("  _           _  \n" +
+                                ",|||.       ,|||.\n" +
+                                "|||||       |||||\n" +
+                                "|||||/)   (\\|||||\n" +
+                                "\\,,, /     \\ ,,,/\n" +
+                                "|___|       |___|");
                     }
 
                     keepLooking = true;
                     break;
                 case 4:
                     //DELETE CONTACT
-                    System.out.println("Enter contact First name: ");
+                    System.out.println("Enter contact's name: ");
                     String userDeleteContactName = input.getString();
 
                     String[] deleteArray;
